@@ -35,6 +35,7 @@ exports.AppModule = AppModule = __decorate([
             serve_static_1.ServeStaticModule.forRoot({
                 rootPath: (0, path_1.join)(__dirname, '..', 'public'),
                 serveRoot: '/public/',
+                exclude: ['/api*']
             }),
             config_1.ConfigModule.forRoot({
                 isGlobal: true,
