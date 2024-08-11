@@ -20,6 +20,7 @@ import { join } from 'path';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'), // Path to your public folder
       serveRoot: '/public/', // URL prefix to access files
+      exclude: ['/api*']
     }),
     ConfigModule.forRoot({
       isGlobal: true,

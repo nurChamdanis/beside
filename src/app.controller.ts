@@ -6,7 +6,7 @@ import { RolesGuard } from './auth/strategy/roles.guard';
 import { Roles } from './custom.decorator';
 import { Role } from './users/enums/role.enum';
 
-@Controller()
+@Controller('api')
 export class AppController {
   constructor(private readonly appService: AppService, private authService: AuthService) {}
 
