@@ -11,8 +11,8 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "/var/task/src/*"
+      "src/*": [
+        "src/*"
       ]
     },
     "incremental": true,
@@ -23,8 +23,21 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "esModuleInterop": true,
+    "moduleResolution": "node",
+    "lib": [
+      "es2021",
+      "dom"
+    ],
     "typeRoots": [
       "./node_modules/@types"
     ]
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
