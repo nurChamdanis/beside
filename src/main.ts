@@ -30,7 +30,7 @@ import { VercelRequest, VercelResponse } from '@vercel/node';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'https://testprogrammer-msi-xx5k.vercel.app',
+    origin: 'https://beside-amber.vercel.app/',
     methods: '*',
   });
 
